@@ -1,1 +1,113 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-image: url("https://i.pinimg.com/originals/76/cc/71/76cc71fb45866a23a21ba5124743da4e.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: streach;
+  height: 100vh;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+.title-pokemon {
+  color: white;
+  text-shadow: 0 0 30px #ff0000, 0 0 40px #ff1100, 0 0 50px #ff2200,
+    0 0 60px #ff3300;
+}
+.pokeball {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 5px solid black;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-half {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: red;
+  top: 0;
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 20px;
+}
+
+.bottom-half {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: streach;
+  border-top: 5px solid;
+}
+.description-pok {
+  width: 70%;
+  height: 50%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pokemon-img {
+  display: flex;
+  justufiy-content: center;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 150px;
+  border: 0;
+}
+.button {
+  width: 150px;
+  color: white;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+p {
+  color: white;
+}
